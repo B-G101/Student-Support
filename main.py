@@ -11,20 +11,20 @@ def index():
     return render_template("index.html")
 
 
-# connects /kangaroos path to render kangaroos.html
-@app.route('/kangaroos/')
+# connects /kangaroos path to render tab1.html
+@app.route('/tab1/')
 def kangaroos():
-    return render_template("kangaroos.html")
+    return render_template("tab1.html")
 
 
-@app.route('/walruses/')
+@app.route('/tab2/')
 def walruses():
-    return render_template("walruses.html")
+    return render_template("tab2.html")
 
 
-@app.route('/hawkers/')
+@app.route('/tab3/')
 def hawkers():
-    return render_template("hawkers.html")
+    return render_template("tab3.html")
 
 
 @app.route('/stub/')
